@@ -1,38 +1,359 @@
-.App {
-  text-align: center;
+/* App.css */
+body {
+  font-family: 'Roboto', sans-serif; /* Use Roboto font for the entire page */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.top-bar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.subscribe,
+.large,
+.magnifying-glass-signup {
+  padding: 10px;
+  margin-right: 10px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+ 
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  color:black;
+  padding: 10px;
+}
+
+.navbar p {
+  margin: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.header {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #434245;
+  display: flex;
+  justify-content: flex-start;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.headercontent{
+  width: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card-container {
+  display: flex;
+  overflow-x: auto;
+  margin: 0 -10px;
+}
+
+.card {
+  flex: 0 0 350px;
+  display: flex;
+  
+  margin:10px;
+  background-color: #f9f9f9;
+}
+
+.thumbnail {
+  overflow: hidden;
+  width: 40%; /* Adjusted to cover the entire width */
+  max-height: 100%; /* Adjusted to cover 40% of the card */
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover .card-content {
+  height: auto;
+  width: auto;
+}
+
+.card-title {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.card-subtitle {
+  font-size: 0.9rem;
+
+  margin-bottom: 5px;
+}
+.subtitle-blue{
+  color: #007bff;
+}
+
+.date-grey{
+  color: #333;
+}
+.card-date {
+  font-size: 0.8rem;
+  color: #777; /* Grey color for the date */
+  margin-bottom: 5px;
+}
+.card-text {
+  font-size: 0.9rem;
+  /* margin-bottom: 10px; */
+}
+
+.continue-reading {
+  color: #007bff;
+  cursor: pointer;
+}
+.card h3.italic-title {
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.main-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-section {
+  flex-grow: 2;
+  width: 100%; /* Adjust the width of the blog post section */
+}
+
+.post {
+  margin-bottom: 30px; /* Reduced margin */
+}
+
+.post h2 {
+  color: #333; /* Title color */
+  margin-bottom: 3px; /* Reduced space between title and subtitle */
+  font-size: 1.2rem; /* Adjusted font size for the title */
+}
+
+.subtitle {
+  margin-top: 2px;
+  font-size: 0.8rem; /* Adjusted font size for the subtitle */
+}
+
+.subtitle span {
+  color: #007bff; /* Blue color for the date */
+}
+
+.continue-reading {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.archive-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+
+.about,
+.archive,
+.elsewhere-section {
+  flex: 0 0 30%;
+  margin-bottom: 20px;
+ margin-left: 10%;
+ width: 50%;
+  padding: 20px;
+  
+}
+
+.about{
+  background-color: #f9f9f9;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about h2,
+.elsewhere-section h2,
+.archive h2 {
+font-style: italic;
+  color: #333; /* Adjusted font color for the cursive headers */
+  font-size: 1.5rem; /* Adjusted font size for the cursive headers */
+  margin-bottom: 15px; /* Added margin between the title and the content */
+}
+
+
+.archive ul,
+.elsewhere-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.archive li,
+.elsewhere-section li {
+  margin-bottom: 10px; /* Added margin between items */
+  color: #007bff; /* Blue color for the text inside li */
+
+}
+
+.add-comment-section {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #434245;
+  color: rgb(173, 158, 171);
+}
+
+
+@media screen and (max-width: 1240px) {
+  .app-container {
+    padding: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .card-container {
+    margin: 0;
   }
+
+  .card {
+    flex: 0 0 calc(50% - 20px);
+  }
+
+  .archive,
+  .elsewhere-section {
+    flex: 0 0 48%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    flex: 0 0 100%;
+  }
+
+  .about,
+.archive,
+.elsewhere-section {
+  flex: 0 0 30%;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  
+ width: 90%;
+
+  
+}
+
+  .add-comment-section {
+     margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+    width: 100%;
+  }
+
+  
+.main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+   .large h1 {
+    font-size: 1rem; /* Adjust the font size as needed */
+  }
+
+  .headercontent {
+    width: 100%;
+  }
+
+  .archive,
+  .elsewhere-section {
+    flex: 0 0 100%;
+  }
+
+  .navbar {
+    overflow-x: auto;
+  }
+
+  .navbar p {
+    white-space: nowrap;
+    margin-right: 10px;
+  }
+}
+
+.commentbutton{
+  background-color:#434245 ;
+  color:white;
+  width: 150px;
+  cursor:pointer;
+  height: 40px;
+}
+
+
+
+.comments-section {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.comments-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.comments-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.comment {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.comment strong {
+  color: #007bff;
+}
+
+.comment em {
+  color: #777;
 }
