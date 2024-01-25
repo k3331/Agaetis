@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/%3Chttps://k3331.github.io/Agaetis%3E/static/css/main.337fd3bb.css",
-    "main.js": "/%3Chttps://k3331.github.io/Agaetis%3E/static/js/main.20e04998.js",
-    "static/js/787.24cea4a6.chunk.js": "/%3Chttps://k3331.github.io/Agaetis%3E/static/js/787.24cea4a6.chunk.js",
-    "index.html": "/%3Chttps://k3331.github.io/Agaetis%3E/index.html",
-    "main.337fd3bb.css.map": "/%3Chttps://k3331.github.io/Agaetis%3E/static/css/main.337fd3bb.css.map",
-    "main.20e04998.js.map": "/%3Chttps://k3331.github.io/Agaetis%3E/static/js/main.20e04998.js.map",
-    "787.24cea4a6.chunk.js.map": "/%3Chttps://k3331.github.io/Agaetis%3E/static/js/787.24cea4a6.chunk.js.map"
+    "main.css": "/Agaetis/static/css/main.337fd3bb.css",
+    "main.js": "/Agaetis/static/js/main.d6c76cfa.js",
+    "static/js/787.24cea4a6.chunk.js": "/Agaetis/static/js/787.24cea4a6.chunk.js",
+    "index.html": "/Agaetis/index.html",
+    "main.337fd3bb.css.map": "/Agaetis/static/css/main.337fd3bb.css.map",
+    "main.d6c76cfa.js.map": "/Agaetis/static/js/main.d6c76cfa.js.map",
+    "787.24cea4a6.chunk.js.map": "/Agaetis/static/js/787.24cea4a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.337fd3bb.css",
-    "static/js/main.20e04998.js"
+    "static/js/main.d6c76cfa.js"
   ]
 }
